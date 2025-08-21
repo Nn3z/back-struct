@@ -18,4 +18,7 @@ func SetUpRoutes(app *fiber.App) {
 	role := app.Group("/role")
 
 	role.Post("/create", roleConroller.Register)
+	role.Patch("/update/:id", roleConroller.UpdateRole)
+	role.Delete("/delete/:id", roleConroller.DeleteRole)
+	role.Get("/", roleConroller.GetAll)
 }

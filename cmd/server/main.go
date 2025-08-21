@@ -2,6 +2,7 @@ package main
 
 import (
 	roleRoutes "bazar/internal/role/routes"
+	userRoutes "bazar/internal/users/routes"
 	"bazar/pkg/config"
 	"log"
 	"os"
@@ -15,6 +16,7 @@ func main() {
 	app := fiber.New()
 
 	roleRoutes.SetUpRoutes(app)
+	userRoutes.SetUpUsers(app)
 
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }
