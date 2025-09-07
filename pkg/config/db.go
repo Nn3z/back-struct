@@ -14,6 +14,7 @@ import (
 var db *sql.DB
 
 func ConnectDB() {
+	log.Println(os.Getenv("DB_URL"))
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
@@ -43,4 +44,3 @@ func GetDB() *sql.DB {
 	}
 	return db
 }
-
