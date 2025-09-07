@@ -4,6 +4,7 @@ import (
 	dtos "bazar/internal/users/DTOs"
 	userService "bazar/internal/users/services"
 	"bazar/pkg/utils"
+	"log"
 
 	"github.com/gofiber/fiber/v2"
 	"golang.org/x/crypto/bcrypt"
@@ -60,4 +61,37 @@ func (uc *UserController) SignUp(c *fiber.Ctx) error {
 		})
 	}
 	return c.Status(fiber.StatusCreated).JSON(user)
+}
+
+func (uc *UserController) Login(c *fiber.Ctx) error {
+	var req dtos.UserLoginDTO
+
+	if err := c.BodyParser(&req); err != nil {
+		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"message": "invalid request",
+			"error":   err.Error(),
+		})
+	}
+	log.Println(req)
+	res, err := uc.service.Login(req)
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": err.Error(),
+		})
+	}
+
+	return c.Status(fiber.StatusOK).JSON(res)
+}
+
+func (uc *UserController) Profile(c *fiber.Ctx) error {
+	userID := c.Locals("id").(string)
+
+	profile, err := uc.service.GetProfile(userID)
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": err.Error(),
+		})
+	}
+
+	return c.Status(fiber.StatusOK).JSON(profile)
 }
