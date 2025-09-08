@@ -25,6 +25,12 @@ services:
     command: ["./wait-for-it.sh", "postgres:5432", "--", "./main"]
     ports:
       - "8080:8080"
+    dns:
+        - 192.168.1.254
+    dns_search:
+      - .
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 volumes:
   postgres_data:
