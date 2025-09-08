@@ -1,0 +1,100 @@
+{
+  "personal_info": {
+    "name": "Pablo Diego Nuñez Ponce",
+    "title": "Backend Developer",
+    "location": "Ixtapaluca, México",
+    "phone": "813681972",
+    "email": "ddaevir19@gmail.com"
+  },
+  "links": {
+    "github": "GitHub",
+    "linkedin": "Linkedin",
+    "portfolio_web": "Portfolio Web"
+  },
+  "profile": {
+    "summary": "Estudiante de Ingeniería en TI, con 1 año de experiencia como desarrollador backend en Go y JavaScript. Experiencia en entornos Linux y en la aplicación de buenas prácticas de desarrollo. Busco aportar en proyectos donde pueda crecer profesionalmente y seguir desarrollando mis habilidades técnicas."
+  },
+  "work_experience": [
+    {
+      "position": "Desarrollador Backend",
+      "company": "Fasdatec",
+      "location": "Ixtapaluca",
+      "start_date": "Jul, 2024",
+      "end_date": "Jul, 2025",
+      "technologies": [
+        "JavaScript",
+        "Node.js",
+        "Go (Fiber)",
+        "Docker",
+        "PostgreSQL",
+        "Insomnia",
+        "Postman"
+      ],
+      "responsibilities": [
+        "Desarrolló junto a mi equipo diversos proyectos backend, incluyendo puntos de venta, aplicaciones sociales con inicios de sesión y generación de códigos QR en el backend.",
+        "Fortaleció sus habilidades blandas, aprendió a aplicar principios de código limpio, buenas prácticas y evitar el código spaghetti."
+      ],
+      "achievements_and_details": [
+        "Realicé varios puntos de venta y un gran número de CRUDS (Create, Read, Update, Delete).",
+        "Optimicé proyectos con el cambio de lenguaje de programación y el uso de Redis para el manejo de caché.",
+        "Apliqué las mejores prácticas en Go y mejoré la estructura de los backends usando Go + Fiber.",
+        "Desempeñé roles tanto de integrante individual (creando endpoints y documentación) como de líder en varios proyectos full stack (aunque mi especialidad es el backend)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Cecytem Ixtapaluca II",
+      "location": "Ixtapaluca",
+      "degree": "Carrera Técnica en Programación.",
+      "start_date": "Jul, 2022",
+      "end_date": "Jul, 2025",
+      "achievements": [
+        "Aprendizaje de fundamentos de programación y mejora de la lógica de programación.",
+        "Desarrollo de un proyecto escolar de generación de reportes usando Java nativo y Java Swing."
+      ]
+    },
+    {
+      "institution": "Universidad Politecnica de Texcoco",
+      "location": "Texcoco",
+      "degree": "Ingeniería en Tecnologias de la Información TSU en Redes Digitales",
+      "start_date": "Sep, 2025",
+      "end_date": null,
+      "achievements": []
+    }
+  ],
+  "skills": {
+    "competencies": {
+      "Backend": "Experimentado",
+      "Comunicacion": "Experimentado",
+      "Bases de Datos Relacionales": "Habilidoso",
+      "Trabajo en equipo": "Experto",
+      "FrontEnd": "Principiante"
+    },
+    "technical_skills_details": {
+      "backend_frameworks": [
+        "Go (Fiber)"
+      ],
+      "nosql_databases": [
+        "Redis"
+      ],
+      "devops_tools": [
+        "Docker (en aprendizaje, usado en proyecto actual)"
+      ],
+      "cloud_platforms": [
+        "AWS (uso ocasional)"
+      ]
+    },
+    "courses": [
+      {
+        "name": "Certificacion HTML5",
+        "institution": "CertiPort",
+        "date": "Jul, 2025"
+      }
+    ],
+    "languages": {
+      "spanish": "Lengua Materna",
+      "english": "Principiante"
+    }
+  }
+}

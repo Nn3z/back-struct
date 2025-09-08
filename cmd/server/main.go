@@ -1,6 +1,7 @@
 package main
 
 import (
+	chatbotRoutes "bazar/internal/chatbot/routes"
 	roleRoutes "bazar/internal/role/routes"
 	userRoutes "bazar/internal/users/routes"
 	"bazar/pkg/config"
@@ -17,6 +18,7 @@ func main() {
 
 	roleRoutes.SetUpRoutes(app)
 	userRoutes.SetUpUsers(app)
+	chatbotRoutes.SetUpChatbot(app)
 
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }
